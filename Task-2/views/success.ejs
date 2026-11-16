@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+</head>
+<body style="
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    padding: 30px;
+">
+    <div style="
+        max-width: 500px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 35px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    ">
+        <h1 style="color: #16a34a;">
+            Registration Successful!
+        </h1>
+
+        <p style="color: #64748b;">
+            Your registration has been completed successfully.
+        </p>
+
+        <h2 style="color: #1e293b;">Student Details</h2>
+
+        <div style="text-align: left; line-height: 2; color: #475569;">
+            <p><strong>Name:</strong> <%= student.name %></p>
+
+            <p><strong>Email:</strong> <%= student.email %></p>
+
+            <p><strong>Phone:</strong> <%= student.phone %></p>
+
+            <p><strong>Course:</strong> <%= student.course %></p>
+
+            <p><strong>Date of Birth:</strong> <%= student.dob %></p>
+
+            <p><strong>Gender:</strong> <%= student.gender %></p>
+
+        </div>
+        <p style="color: #16a34a;">
+            Total Registered Students: <%= totalStudents %>
+        </p>
+        <a href="/" style="
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        ">
+            Back to Home
+        </a>
+    </div>
+
+</body>
+</html>

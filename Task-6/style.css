@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #38bdf8;
+    margin-bottom: 25px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #e2e8f0;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    background: #0f172a;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #38bdf8;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+#message {
+    text-align: center;
+    margin-top: 15px;
+    color: #38bdf8;
+}
+
+#studentList {
+    margin-top: 20px;
+}
+
+.student-card {
+    background: #334155;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+[hidden] {
+    display: none !important;
+}

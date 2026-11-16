@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Task 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Portal</h1>
+
+        <!-- Register Section -->
+        <section id="registerSection">
+            <h2>Register</h2>
+
+            <input type="text" id="registerName" placeholder="Full Name">
+            <input type="email" id="registerEmail" placeholder="Email">
+            <input type="password" id="registerPassword" placeholder="Password">
+
+            <button onclick="registerUser()">Register</button>
+        </section>
+
+        <!-- Login Section -->
+        <section id="loginSection">
+            <h2>Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email">
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button onclick="loginUser()">Login</button>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboardSection" hidden>
+            <h2>Student Dashboard</h2>
+
+            <button onclick="fetchStudents()">View Students</button>
+            <button onclick="logoutUser()">Logout</button>
+
+            <div id="studentList"></div>
+        </section>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

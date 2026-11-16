@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - Cognifyz</title>
+</head>
+
+<body style="
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 30px;
+">
+
+    <div style="
+        max-width: 550px;
+        margin: 30px auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    ">
+
+        <h1 style="
+            text-align: center;
+            color: #1e293b;
+            margin-bottom: 10px;
+        ">
+            Student Registration
+        </h1>
+
+        <p style="
+            text-align: center;
+            color: #64748b;
+            margin-bottom: 30px;
+        ">
+            Fill in your details to register
+        </p>
+
+        <form action="/submit" method="POST">
+
+            <label>Full Name:</label>
+            <input
+                type="text"
+                name="fullName"
+                placeholder="Enter your full name"
+                style="width: 100%; padding: 11px; margin: 8px 0 18px; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 6px;"
+            >
+
+            <label>Email:</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                style="width: 100%; padding: 11px; margin: 8px 0 18px; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 6px;"
+            >
+
+            <label>Phone Number:</label>
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Enter 10-digit phone number"
+                style="width: 100%; padding: 11px; margin: 8px 0 18px; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 6px;"
+            >
+
+            <label>Course:</label>
+            <select
+                name="course"
+                style="width: 100%; padding: 11px; margin: 8px 0 18px; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 6px;"
+            >
+                <option value="">Select Course</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+            </select>
+
+            <label>Date of Birth:</label>
+            <input
+                type="date"
+                name="dob"
+                style="width: 100%; padding: 11px; margin: 8px 0 18px; box-sizing: border-box; border: 1px solid #cbd5e1; border-radius: 6px;"
+            >
+
+            <label>Gender:</label>
+
+            <div style="margin: 12px 0 20px; color: #475569;">
+                <input type="radio" name="gender" value="Female">
+                Female
+
+                <input type="radio" name="gender" value="Male">
+                Male
+
+                <input type="radio" name="gender" value="Other">
+                Other
+            </div>
+
+            <div style="margin-bottom: 22px;">
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    value="accepted"
+                >
+
+                <label for="terms">
+                    I agree to the Terms and Conditions
+                </label>
+            </div>
+
+            <button
+                type="submit"
+                style="
+                    width: 100%;
+                    padding: 13px;
+                    background-color: #2563eb;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    font-size: 16px;
+                    cursor: pointer;
+                "
+            >
+                Register Now
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
